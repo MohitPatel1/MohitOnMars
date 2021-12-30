@@ -16,7 +16,7 @@ int year[5] = {2017, 2018 , 2019, 2020, 2021};
 
 float yearlyRainfall[5] ; //will store total rainfall in each year
 float totalRainfall, averageRainfall,monthTotal,monthAverage;
-int i,t;
+int i,t,a,b;
 
 printf("Year     Yearly Avrage  (Centimeters)\n");
 for (t=0 ; t< 5 ; t++)      //For loop for row (year)
@@ -39,11 +39,11 @@ printf("\n\nAvrage rainfall of all 5 years is :%.2f",averageRainfall);
 
 printf("\n\nJanuary  Fabruary  March  April  May  June  July  August  September  October  November  december\n");
 
-for (i=0 ; i<12 ; i++)      // for loop for raw : first row - months, second row- average rain
+for (a=0 ; a<12 ; a++)      // for loop for raw : first row - months, second row- average rain
 {
-    for(t=0 ; t<5 ; t++)
+    for(b=0 ; b<5 ; b++)
         {
-                monthTotal += rainFall[t][i] ;
+                monthTotal += rainFall[b][a] ;
         }
           monthAverage=monthTotal/5;
           printf("%f ",monthAverage);        //printing average monthly rain in month i
